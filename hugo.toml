@@ -22,7 +22,7 @@ theme = "hugo-theme-m10c"
 
 
 [params]
-  author = ""
+  author = "Immaculate Lift Studio"
   description = "Hobbyist developer working primarily on RotorSim"
   menu_item_separator = " - "
   avatar = "icon.png"

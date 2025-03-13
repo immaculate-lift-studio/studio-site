@@ -1,0 +1,56 @@
+baseURL = 'https://example.org/'
+languageCode = 'en-us'
+title = ''
+theme = "hugo-theme-m10c"
+
+[menu]
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "/"
+    weight = 1
+  [[menu.main]]
+    identifier = "rotorsim"
+    name = "RotorSim"
+    url = "/rotorsim/"
+    weight = 2
+  [[menu.main]]
+    identifier = "focusberry"
+    name = "Focusberry"
+    url = "/focusberry/"
+    weight = 3
+
+
+[params]
+  author = ""
+  description = "Hobbyist developer working primarily on RotorSim"
+  menu_item_separator = " - "
+  avatar = "/logo.png"
+  favicon = "/favicon.png"
+	[[params.social]]
+	  icon = "brand-github"
+	  name = "My Github"
+	  url = "https://github.com/immaculate-lift-studio"
+
+	[[params.social]]
+	  icon = "brand-youtube"
+	  name = "My Youtube"
+	  url = "https://www.youtube.com/@Fairbear8974"
+
+	[[params.social]]
+	  icon = "brand-mail"
+	  name = "Developer Page"
+	  url = "mailto:immaculate-lift-studio@outlook.com"
+
+	[[params.social]]
+	  icon = "brand-kofi"
+	  name = "Buy me a coffee"
+	  url = "https://ko-fi.com/immaculateliftstudio"
+
+[params.style]
+  darkestColor = "#3B4252"
+  darkColor = "#5C8BA7"
+  lightColor = "#E5E9F0"
+  lightestColor = "#ffffff"
+  primaryColor = "#ebcb8b"
+

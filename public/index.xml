@@ -2,25 +2,25 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title></title>
-    <link>http://localhost:1313/</link>
+    <link>http://localhost:1313/studio-site/</link>
     <description>Recent content on </description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 12 Mar 2025 10:57:09 -0700</lastBuildDate>
-    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/studio-site/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title></title>
-      <link>http://localhost:1313/focusberry/</link>
+      <link>http://localhost:1313/studio-site/focusberry/</link>
       <pubDate>Wed, 12 Mar 2025 10:57:09 -0700</pubDate>
-      <guid>http://localhost:1313/focusberry/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;http://localhost:1313/focusberry-title.png&#34; alt=&#34;Focusberry Banner&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;FocusBerry is a minimalist productivity tool designed to help you stay focused without distractions. Using the Pomodoro Technique, it structures your work sessions based on your desired schedule, gently reminding you when to take breaks and resume work. To keep you motivated, FocusBerry tracks your progress with virtual berries that grow as you complete more focus sessions.&lt;/p&gt;&#xA;&lt;h3 id=&#34;what-is-the-pomodoro-technique&#34;&gt;What is the Pomodoro Technique?&lt;/h3&gt;&#xA;&lt;p&gt;The Pomodoro Technique is a time management method that breaks work into structured intervals, typically 25 minutes of focused work followed by a 5-minute break. After completing a set number of cycles, a longer break is taken to prevent burnout. This technique helps improve concentration, maintain productivity, and reduce mental fatigue by ensuring a balance between focused effort and rest.&lt;/p&gt;</description>
+      <guid>http://localhost:1313/studio-site/focusberry/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;../focusberry-title.png&#34; alt=&#34;Focusberry Banner&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;FocusBerry is a minimalist productivity tool designed to help you stay focused without distractions. Using the Pomodoro Technique, it structures your work sessions based on your desired schedule, gently reminding you when to take breaks and resume work. To keep you motivated, FocusBerry tracks your progress with virtual berries that grow as you complete more focus sessions.&lt;/p&gt;&#xA;&lt;h3 id=&#34;what-is-the-pomodoro-technique&#34;&gt;What is the Pomodoro Technique?&lt;/h3&gt;&#xA;&lt;p&gt;The Pomodoro Technique is a time management method that breaks work into structured intervals, typically 25 minutes of focused work followed by a 5-minute break. After completing a set number of cycles, a longer break is taken to prevent burnout. This technique helps improve concentration, maintain productivity, and reduce mental fatigue by ensuring a balance between focused effort and rest.&lt;/p&gt;</description>
     </item>
     <item>
       <title></title>
-      <link>http://localhost:1313/rotorsim/</link>
+      <link>http://localhost:1313/studio-site/rotorsim/</link>
       <pubDate>Wed, 12 Mar 2025 10:57:09 -0700</pubDate>
-      <guid>http://localhost:1313/rotorsim/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;http://localhost:1313/rotorsim-hugo-1.png&#34; alt=&#34;RotorSim Header&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Take to the skies in RotorSim, a retro-inspired helicopter simulation that blends classic 90s flight sims with modern accessibility. Fly three unique helicopters, each with distinct handling, as you complete 30 missions ranging from rescue ops to cargo transport. Dynamic weather effects like storms, fog, and wind add to the challenge, while a sim-cade flight model keeps controls intuitive—no expensive peripherals required. Whether tackling missions or exploring in free flight mode, RotorSim runs smoothly even on low-end hardware, including the Steam Deck.&lt;/p&gt;</description>
+      <guid>http://localhost:1313/studio-site/rotorsim/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;../rotorsim-hugo-1.png&#34; alt=&#34;RotorSim Header&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Take to the skies in RotorSim, a retro-inspired helicopter simulation that blends classic 90s flight sims with modern accessibility. Fly three unique helicopters, each with distinct handling, as you complete 30 missions ranging from rescue ops to cargo transport. Dynamic weather effects like storms, fog, and wind add to the challenge, while a sim-cade flight model keeps controls intuitive—no expensive peripherals required. Whether tackling missions or exploring in free flight mode, RotorSim runs smoothly even on low-end hardware, including the Steam Deck.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

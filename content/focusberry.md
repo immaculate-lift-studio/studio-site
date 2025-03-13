@@ -4,7 +4,7 @@ draft = false
 title = ''
 +++
 
-![Focusberry Banner](/focusberry-title.png)
+![Focusberry Banner](../focusberry-title.png)
 
 FocusBerry is a minimalist productivity tool designed to help you stay focused without distractions. Using the Pomodoro Technique, it structures your work sessions based on your desired schedule, gently reminding you when to take breaks and resume work. To keep you motivated, FocusBerry tracks your progress with virtual berries that grow as you complete more focus sessions.
 

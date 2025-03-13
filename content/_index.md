@@ -12,11 +12,11 @@ Aviation has always been a big part of my life and it's something I've always be
 # My Projects: 
 **RotorSim** - A retro-style helicopter simulation built in the Godot Engine focused on easy to pick up mechanics. Fly around and test your skills with 3 different aircraft in a dynamic, mission-filled world. A game is currently available to wishlist on Steam, and you can visit Itch.io or the RotorSim discord to play test builds and voice your opinions on the game's direction.
 
-![RotorSim Banner](/rotorsim-banner.png)
+![RotorSim Banner](rotorsim-banner.png)
 
 **FocusBerry** - A Minimalistic Productivity Tool that stays out of your way so you can get your work done quickly and efficiently. Still in development, but will be released soon.
 
-![Focusberry Banner](/focusberry-banner.png)
+![Focusberry Banner](focusberry-banner.png)
 ________________________________________
 Check out the project pages if you'd like more information about what I'm working on. You can also visit my Github, Itch, or Steam. If you are interested in collaborating on one of my projects, please email me.
 ________________________________________

@@ -1,4 +1,4 @@
-baseURL = 'https://immaculate-lift-studio.github.io/studio-site/rotorsim/'
+baseURL = 'https://immaculate-lift-studio.github.io/studio-site/'
 languageCode = 'en-us'
 title = ''
 theme = "hugo-theme-m10c"

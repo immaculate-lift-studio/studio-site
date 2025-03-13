@@ -1,4 +1,4 @@
-baseURL = 'https://immaculate-lift-studio.github.io/studio-site/'
+baseURL = 'https://immaculate-lift-studio.github.io'
 languageCode = 'en-us'
 title = ''
 theme = "hugo-theme-m10c"
@@ -25,7 +25,7 @@ theme = "hugo-theme-m10c"
   author = ""
   description = "Hobbyist developer working primarily on RotorSim"
   menu_item_separator = " - "
-  avatar = "https://github.com/immaculate-lift-studio/studio-site/blob/20a9d2e3f51d8201b433157e5c28b5958901bfa5/static/logo.png"
+  avatar = "/logo.png"
   favicon = "/favicon.png"
 	[[params.social]]
 	  icon = "brand-github"

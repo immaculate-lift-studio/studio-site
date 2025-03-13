@@ -25,7 +25,7 @@ theme = "hugo-theme-m10c"
   author = ""
   description = "Hobbyist developer working primarily on RotorSim"
   menu_item_separator = " - "
-  avatar = "/logo.png"
+  avatar = "static/logo.png"
   favicon = "/favicon.png"
 	[[params.social]]
 	  icon = "brand-github"

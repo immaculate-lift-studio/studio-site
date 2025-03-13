@@ -1,6 +1,6 @@
 baseURL = 'https://immaculate-lift-studio.github.io/studio-site/'
 languageCode = 'en-us'
-title = ''
+title = 'Immaculate Lift Studio'
 theme = "hugo-theme-m10c"
 
 [menu]

@@ -12,7 +12,7 @@ Aviation has been a big part of my life and it's something I've always been pass
 
 
 # My Projects: 
-**RotorSim** - A retro-style helicopter simulation built in the Godot Engine focused on easy to pick up mechanics. Fly around and test your skills with 3 different aircraft in a dynamic, mission-filled world. A game is currently available to wishlist on Steam, and you can visit Itch.io or the RotorSim discord to play test builds and voice your opinions on the game's direction.
+**RotorSim** - A retro-inspired helicopter simulation built in the Godot Engine focused on easy to pick up mechanics. Fly around and test your skills with 3 different aircraft in a dynamic, mission-filled world. The game is currently available to wishlist on Steam, and you can visit Itch.io or the RotorSim discord to play test builds and voice your opinions on the game's direction.
 
 ![RotorSim Banner](rotorsim-banner.png)
 

@@ -8,11 +8,12 @@ title = 'RotorSim: Helicopter Simulator'
 
 Take to the skies in RotorSim, a retro-inspired helicopter simulation that blends classic 90s flight sims with modern accessibility. Fly three unique helicopters, each with distinct handling, as you complete 30 missions ranging from rescue ops to cargo transport. Dynamic weather effects like storms, fog, and wind add to the challenge, while a sim-cade flight model keeps controls intuitive  – no expensive peripherals required. Whether tackling missions or exploring in free-flight mode, RotorSim runs smoothly even on low-end hardware, including the Steam Deck.
 _____________________________
-### Wishlist on Steam!
-[**Steam Store Page**](https://store.steampowered.com/app/3376070/RotorSim_Helicopter_Simulator/)
+
+[![Steam Store Page](../wishlist_button.png)](https://store.steampowered.com/app/3376070/RotorSim_Helicopter_Simulator/)
+
 _____________________________
-### Stay updated and join the community
-Join the Discord to stay up to date on progress: [**Link to Join**](https://discord.gg/VJGrde5u)
+Please consider following my development on YouTube or joining the RotorSim discord! All ideas are welcome, and I welcome suggestions and feedback. There's a huge roadmap ahead and with your help, I'll be able to make this the best possible experience.
 
-Youtube Devlog [**Link to Channel**](https://www.youtube.com/channel/UC-9JixNs1FFE6T5DGwZ6O5Q)
+[![Discord Server](../discord_button.png)](https://discord.gg/rJJgg7yYuc) 
 
+[![Youtube Channel](../youtube_button.png)](https://www.youtube.com/@Fairbear8974)

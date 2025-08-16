@@ -19,6 +19,11 @@ theme = "hugo-theme-m10c"
     name = "Focusberry"
     url = "/focusberry/"
     weight = 3
+  [[menu.main]]
+    identifier = "open-source"
+    name = "Open Source Projects"
+    url = "/open-source/"
+    weight = 3
 
 
 [params]
@@ -37,6 +42,11 @@ theme = "hugo-theme-m10c"
 	  name = "My Youtube"
 	  url = "https://www.youtube.com/@Fairbear8974"
 
+	[[params.social]]
+	  icon = "brand-itchdotio"
+	  name = "My Itch.io"
+	  url = "https://immaculate-lift-studio.itch.io/"
+	
 	[[params.social]]
 	  icon = "brand-mail"
 	  name = "Developer Page"

@@ -16,11 +16,18 @@
       <description>&lt;p&gt;&lt;img src=&#34;../focusberry-title.png&#34; alt=&#34;Focusberry Banner&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;FocusBerry is a minimalist productivity tool designed to help you stay focused without distractions. Using the Pomodoro Technique, it structures work sessions based on your desired schedule, gently reminding you when to take breaks and when to resume work. To keep you motivated, FocusBerry tracks your progress with virtual berries that multiply as you complete focus sessions.&lt;/p&gt;&#xA;&lt;h3 id=&#34;what-is-the-pomodoro-technique&#34;&gt;What is the Pomodoro Technique?&lt;/h3&gt;&#xA;&lt;p&gt;The Pomodoro Technique is a time management method that breaks work into structured intervals, typically 25 minutes of focused work followed by a 5-minute break. After completing a set number of cycles, a longer break is taken to prevent burnout. This technique can help improve concentration, maintain productivity, and reduce mental fatigue by ensuring a balance between focused effort and rest.&lt;/p&gt;</description>
     </item>
     <item>
+      <title>Open Source Projects</title>
+      <link>http://localhost:1313/studio-site/open-source/</link>
+      <pubDate>Wed, 12 Mar 2025 10:57:09 -0700</pubDate>
+      <guid>http://localhost:1313/studio-site/open-source/</guid>
+      <description>&lt;p&gt;During development, I take extra time to polish and release the tools I design so I can release them to the open source community. If something I make help somebody else develop something wonderful, everyone wins!&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;https://github.com/immaculate-lift-studio/CityCrafter3D&#34;&gt;CityCrafter3D&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;../city-crafter.png&#34; alt=&#34;CityCrafter3D&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;This is a city generator that builds cities using a slot-based grid system. Each block can be different sizes (1x1, 2x1, 2x2), and blocks are assigned district types (residential, commercial, industrial) using noise or random placement.&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>RotorSim: Helicopter Simulator</title>
       <link>http://localhost:1313/studio-site/rotorsim/</link>
       <pubDate>Wed, 12 Mar 2025 10:57:09 -0700</pubDate>
       <guid>http://localhost:1313/studio-site/rotorsim/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;../rotorsim-hugo-1.png&#34; alt=&#34;RotorSim Header&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Take to the skies in RotorSim, a retro-inspired helicopter simulation that blends classic 90s flight sims with modern accessibility. Fly three unique helicopters, each with distinct handling, as you complete 30 missions ranging from rescue ops to cargo transport. Dynamic weather effects like storms, fog, and wind add to the challenge, while a sim-cade flight model keeps controls intuitive  – no expensive peripherals required. Whether tackling missions or exploring in free-flight mode, RotorSim runs smoothly even on low-end hardware, including the Steam Deck.&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;img src=&#34;../rotorsim-hugo-1.png&#34; alt=&#34;RotorSim Header&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Take to the skies in RotorSim, a retro-inspired helicopter simulation that blends classic 90s flight sims with modern accessibility. Fly three unique helicopters, each with distinct handling, as you complete 30 missions ranging from rescue ops to cargo transport. Dynamic weather effects like storms, fog, and wind add to the challenge, while a sim-cade flight model keeps controls intuitive without expensive peripherals required. RotorSim runs smoothly on low-end hardware and the Steam Deck.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

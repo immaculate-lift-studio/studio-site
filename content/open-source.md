@@ -4,7 +4,7 @@ draft = false
 title = 'Open Source Projects'
 +++
 
-During development, I take extra time to polish and release the tools I design so I can release them to the open source community. If something I make help somebody else develop something wonderful, everyone wins!
+During development, I take extra time to polish and release the tools I design so I can release them to the open source community. If something I make helps somebody else develop something cool, everyone wins!
 
 **[CityCrafter3D](https://github.com/immaculate-lift-studio/CityCrafter3D)**
 

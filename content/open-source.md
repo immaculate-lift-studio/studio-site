@@ -4,7 +4,14 @@ draft = false
 title = 'Open Source Projects'
 +++
 
-During development, I take extra time to polish and release the tools I design so I can release them to the open source community. If something I make helps somebody else develop something cool, everyone wins!
+Below are my released and maintained open source projects. During development of my main projects, I take extra time to polish and release the tools I design so I can release them to the open source community. My goal is to contribute to a healthier, friendlier community, where everyone has what they need to succeed.
+
+**[FocusBerry Pomodoro Timer](https://github.com/immaculate-lift-studio/FocusBerry)**
+
+![Focusberry Banner](../focusberry-static.png)
+
+FocusBerry is a minimalist productivity tool designed to help you stay focused without distractions. Using the Pomodoro Technique, it structures work sessions based on your desired schedule, gently reminding you when to take breaks and when to resume work. To keep you motivated, FocusBerry tracks your progress with virtual berries that multiply as you complete focus sessions.
+_________________________________
 
 **[CityCrafter3D](https://github.com/immaculate-lift-studio/CityCrafter3D)**
 

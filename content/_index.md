@@ -9,15 +9,25 @@ I am self-taught developer and aviation nerd designing simulations and apps with
 
 Check out the below pages if you'd like more information about what I'm working on. You can also visit my Github, Itch, or Steam. If you are interested in collaborating on one of my projects, please email me.
 
+---
+
+
+## [Long-Form Content](/studio-site/posts "Articles")
+A development log of sorts, in which I explain why my games feel and run the way they do. 
+
+---
+
 ## [RotorSim Series](/studio-site/rotorsim "RotorSim")
 [![RotorSim Banner](rotorsim-banner.png)](/studio-site/rotorsim "RotorSim") 
 
 Retro-inspired helicopter simulations built in the Godot Engine focused on easy to pick up mechanics. 
 
+---
+
+
 ## [Open Source Projects](/studio-site/open-source "Open Source")
 [![CityCrafter3D](city-crafter.png)](/studio-site/open-source "Open Source") 
 
 A collection of my Godot tools and addons, released with the MIT license. 
-
 
 

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Open-Sources on Immaculate Lift Studio</title>
+    <link>http://localhost:1313/studio-site/open-source/</link>
+    <description>Recent content in Open-Sources on Immaculate Lift Studio</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 12 Mar 2025 10:57:09 -0700</lastBuildDate>
+    <atom:link href="http://localhost:1313/studio-site/open-source/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Open Source Projects</title>
+      <link>http://localhost:1313/studio-site/open-source/open-source/</link>
+      <pubDate>Wed, 12 Mar 2025 10:57:09 -0700</pubDate>
+      <guid>http://localhost:1313/studio-site/open-source/open-source/</guid>
+      <description>&lt;p&gt;Below are my released and maintained open source projects. During development of my main projects, I take extra time to polish and release the tools I design so I can release them to the open source community. My goal is to contribute to a healthier, friendlier community, where everyone has what they need to succeed.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;https://github.com/immaculate-lift-studio/FocusBerry&#34;&gt;FocusBerry Pomodoro Timer&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;../focusberry-static.png&#34; alt=&#34;Focusberry Banner&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;FocusBerry is a minimalist productivity tool designed to help you stay focused without distractions. Using the Pomodoro Technique, it structures work sessions based on your desired schedule, gently reminding you when to take breaks and when to resume work. To keep you motivated, FocusBerry tracks your progress with virtual berries that multiply as you complete focus sessions.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

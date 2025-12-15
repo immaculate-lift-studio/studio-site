@@ -5,20 +5,20 @@ theme = "hugo-theme-m10c"
 
 [menu]
   [[menu.main]]
-    identifier = "about"
-    name = "About Me"
-    url = "/"
-    weight = 1
-  [[menu.main]]
     identifier = "rotorsim"
     name = "RotorSim Series"
     url = "/rotorsim/"
-    weight = 2
+    weight = 1
   [[menu.main]]
     identifier = "open-source"
     name = "Open Source Projects"
     url = "/open-source/"
     weight = 3
+  [[menu.main]]
+    identifier = "blog-posts"
+    name = "Articles"
+    url = "/posts/"
+    weight = 2
 
 [params]
   author = "Immaculate Lift Studio"

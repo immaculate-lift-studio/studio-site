@@ -9,11 +9,17 @@ Over many years playing flight simulators, I’ve noticed that there’s usually
 ## Simplicity and Game Feel
 With this design philosophy, how something feels to play is far more important than accuracy, but it’s important to allow the player to feel that they are controlling this heavy, complex machine. This simplicity isn’t laziness, it’s a recognition and respect of a player’s time; sometimes they just want to fly around and have fun without having to use a checklist. My solution to this was to not model actual flight simulation at all. What’s important to the player in this situation is the sensation, such as lift, momentum, sound, and control lag, and you can fake that with a bit of convincing math.
 
+![Lift Demonstration](../lift_example.png)
+
 **Imitating Physics** - 
 For example, instead of fully simulating blade physics to correctly generate lift, it’s a simple force that acts on the helicopter (pushes up) based on where the collective is positioned. The amount of “up” generated depends on how fast the rotor blades are turning, so at 100% RPM = 100% lift. And when the player uses the cyclic to steer, it’s a push towards the direction they tilt (with a reduction of lift based on how much they are tilting, which can be countered with more collective). There’s also control “lag” built into the player’s inputs, which reflect the fact that a helicopter has many parts, such as linkages, cables, and the rotor disk movement itself, that have to play catch up to the pilot’s inputs. It sounds kind of complicated, but it’s doing 5% or less of the math required to accurately model a helicopter. 
 
+![Sound Demonstration](../sound_example.png)
+
 **Game Sound** - 
 Audio is also an extremely important part. Since I’m not modeling the pitch of the rotor blades, there isn’t a change of air pressure or engine response to the higher power required, so the sound of the rotor blades is simply adjusted to where the collective is and that provides clear and meaty feedback for how hard the helicopter is working to go where the player wants.
+
+![Camera Demonstration](../camera_example.png)
 
 **Player Control** - 
 The camera-facing control system trivializes the most complicated parts of controlling a helicopter, which was why I settled on this relatively simple system: The aircraft always faces where the camera is looking, so all the player has to do is look where they want the helicopter to settle itself. This is a deliberate action to open up this game to as many people as possible, and to empower the player to feel like they are driving without having to account for the dozens of micro and counter inputs that a helicopter pilot would need to do. 

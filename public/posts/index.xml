@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts and Long-Form Content on Ben Hebert</title>
-    <link>http://localhost:1313/studio-site/posts/</link>
+    <link>http://localhost:42237/studio-site/posts/</link>
     <description>Recent content in Posts and Long-Form Content on Ben Hebert</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 14 Dec 2025 20:28:59 -0800</lastBuildDate>
-    <atom:link href="http://localhost:1313/studio-site/posts/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:42237/studio-site/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Faking Realism: The Sim-Lite Experience</title>
-      <link>http://localhost:1313/studio-site/posts/faking-realism/</link>
+      <link>http://localhost:42237/studio-site/posts/faking-realism/</link>
       <pubDate>Sun, 14 Dec 2025 20:28:59 -0800</pubDate>
-      <guid>http://localhost:1313/studio-site/posts/faking-realism/</guid>
+      <guid>http://localhost:42237/studio-site/posts/faking-realism/</guid>
       <description>&lt;p&gt;Over many years playing flight simulators, I’ve noticed that there’s usually two types of games. On one hand, you have complicated games with a learning curve that demand practice, memorization, and patience. On the other hand, you have arcade games that are easy to pick up and play but have none of the depth that comes with the more involved sims. Both have merits but there aren’t as many of what I like to call “sim-lite” games that blend the two types into one. I wanted to post about this to not only explain the process I took, but to also draw attention to the importance of accessibility and simplicity in a genre that oftentimes prides itself in its difficulty.&lt;/p&gt;</description>
     </item>
   </channel>

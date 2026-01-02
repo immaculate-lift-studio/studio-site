@@ -14,10 +14,6 @@ I founded Immaculate Lift Studio in 2023. When I started developing software, my
 
 Retro-inspired helicopter simulations built in the Godot Engine focused on easy to pick up mechanics. 
 
----
-
-## [Long-Form Content](/studio-site/posts "Articles")
-A development log of sorts, in which I explain why my games feel and run the way they do. 
 
 ---
 
@@ -28,3 +24,7 @@ A development log of sorts, in which I explain why my games feel and run the way
 A collection of my Godot tools and addons, released with the MIT license. 
 
 
+---
+
+## [Long-Form Content](/studio-site/posts "Articles")
+A development log of sorts, in which I explain why my games feel and run the way they do. 

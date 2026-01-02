@@ -1,7 +1,7 @@
 +++
 date = '2025-03-12T10:57:09-07:00'
 draft = false
-title = 'RotorSim: Helicopter Simulator'
+title = 'RotorSim: Helicopter Simulator (Released July 2025)'
 +++
 
 ![RotorSim Header](../rotorsim-hugo-1.png)

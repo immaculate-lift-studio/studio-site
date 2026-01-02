@@ -1,14 +1,14 @@
 <!doctype html>
 <html lang="en-us">
   <head><script src="/studio-site/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=studio-site/livereload" data-no-instant defer></script>
-    <title>Faking Realism: The Sim-Lite Experience // Immaculate Lift Studio</title>
+    <title>Faking Realism: The Sim-Lite Experience // Ben Hebert</title>
     <link rel="shortcut icon" href="favicon.png" />
     <meta charset="utf-8" />
     <meta name="generator" content="Hugo 0.152.2">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="author" content="Immaculate Lift Studio" />
     <meta name="description" content="" />
-    <link rel="stylesheet" href="/studio-site/css/main.min.0edd3c5da1869c31e4f9449147b6bced578279cfd61f1342b8afe40004538623.css" />
+    <link rel="stylesheet" href="/studio-site/css/main.min.ce534a427309531d527a2763773969c6c09988308f78f87131250b9ab3597c31.css" />
     
 
     
@@ -18,7 +18,7 @@
   <meta name="twitter:description" content="Over many years playing flight simulators, I’ve noticed that there’s usually two types of games. On one hand, you have complicated games with a learning curve that demand practice, memorization, and patience. On the other hand, you have arcade games that are easy to pick up and play but have none of the depth that comes with the more involved sims. Both have merits but there aren’t as many of what I like to call “sim-lite” games that blend the two types into one. I wanted to post about this to not only explain the process I took, but to also draw attention to the importance of accessibility and simplicity in a genre that oftentimes prides itself in its difficulty.">
 
     <meta property="og:url" content="http://localhost:1313/studio-site/posts/faking-realism/">
-  <meta property="og:site_name" content="Immaculate Lift Studio">
+  <meta property="og:site_name" content="Ben Hebert">
   <meta property="og:title" content="Faking Realism: The Sim-Lite Experience">
   <meta property="og:description" content="Over many years playing flight simulators, I’ve noticed that there’s usually two types of games. On one hand, you have complicated games with a learning curve that demand practice, memorization, and patience. On the other hand, you have arcade games that are easy to pick up and play but have none of the depth that comes with the more involved sims. Both have merits but there aren’t as many of what I like to call “sim-lite” games that blend the two types into one. I wanted to post about this to not only explain the process I took, but to also draw attention to the importance of accessibility and simplicity in a genre that oftentimes prides itself in its difficulty.">
   <meta property="og:locale" content="en_us">
@@ -32,7 +32,7 @@
   <body>
     <header class="app-header">
       <a href="/studio-site/"><img class="app-header-avatar" src="/studio-site/icon.png" alt="Immaculate Lift Studio" /></a>
-      <span class="app-header-title">Immaculate Lift Studio</span>
+      <span class="app-header-title">Ben Hebert</span>
       <nav class="app-header-menu">
           <a class="app-header-menu-item" href="/studio-site/rotorsim/">RotorSim Series</a>
              - 
@@ -42,7 +42,7 @@
           
           <a class="app-header-menu-item" href="/studio-site/open-source/">Open Source Projects</a>
       </nav>
-      <p>Indie developer building Helicopter Simulators and contributing to open-source Godot projects.</p>
+      <p>Immaculate Lift Studio - Building Helicopter Simulators and contributing to open-source Godot projects.</p>
       <div class="app-header-social">
         
           <a href="https://github.com/immaculate-lift-studio" target="_blank" rel="noreferrer noopener me">
@@ -90,13 +90,13 @@
       <p>Over many years playing flight simulators, I’ve noticed that there’s usually two types of games. On one hand, you have complicated games with a learning curve that demand practice, memorization, and patience. On the other hand, you have arcade games that are easy to pick up and play but have none of the depth that comes with the more involved sims. Both have merits but there aren’t as many of what I like to call “sim-lite” games that blend the two types into one. I wanted to post about this to not only explain the process I took, but to also draw attention to the importance of accessibility and simplicity in a genre that oftentimes prides itself in its difficulty.</p>
 <h2 id="simplicity-and-game-feel">Simplicity and Game Feel</h2>
 <p>With this design philosophy, how something feels to play is far more important than accuracy, but it’s important to allow the player to feel that they are controlling this heavy, complex machine. This simplicity isn’t laziness, it’s a recognition and respect of a player’s time; sometimes they just want to fly around and have fun without having to use a checklist. My solution to this was to not model actual flight simulation at all. What’s important to the player in this situation is the sensation, such as lift, momentum, sound, and control lag, and you can fake that with a bit of convincing math.</p>
-<p><strong>Imitating Physics</strong><br>
+<p><strong>Imitating Physics</strong> -
 For example, instead of fully simulating blade physics to correctly generate lift, it’s a simple force that acts on the helicopter (pushes up) based on where the collective is positioned. The amount of “up” generated depends on how fast the rotor blades are turning, so at 100% RPM = 100% lift. And when the player uses the cyclic to steer, it’s a push towards the direction they tilt (with a reduction of lift based on how much they are tilting, which can be countered with more collective). There’s also control “lag” built into the player’s inputs, which reflect the fact that a helicopter has many parts, such as linkages, cables, and the rotor disk movement itself, that have to play catch up to the pilot’s inputs. It sounds kind of complicated, but it’s doing 5% or less of the math required to accurately model a helicopter.</p>
-<p><strong>Game Sound</strong><br>
+<p><strong>Game Sound</strong> -
 Audio is also an extremely important part. Since I’m not modeling the pitch of the rotor blades, there isn’t a change of air pressure or engine response to the higher power required, so the sound of the rotor blades is simply adjusted to where the collective is and that provides clear and meaty feedback for how hard the helicopter is working to go where the player wants.</p>
-<p><strong>Player Control</strong><br>
+<p><strong>Player Control</strong> -
 The camera-facing control system trivializes the most complicated parts of controlling a helicopter, which was why I settled on this relatively simple system: The aircraft always faces where the camera is looking, so all the player has to do is look where they want the helicopter to settle itself. This is a deliberate action to open up this game to as many people as possible, and to empower the player to feel like they are driving without having to account for the dozens of micro and counter inputs that a helicopter pilot would need to do.</p>
-<p><strong>End Result</strong><br>
+<p><strong>End Result</strong> -
 All this and more is why these simplified physics work so well on older hardware and with a controller. It’s a consistent experience that can be fine-tuned to death, so how my helicopters feel is a result of painstaking tuning on dozens of variables over many hours. If it doesn’t feel good, I don’t have to start a complex calculation from scratch, I just change a number or two until it feels better. These simplified calculations also lower system requirements significantly, so players can play the game on an old laptop, a Steam Deck, or a high-end computer, and get roughly the same experience.</p>
 <h2 id="accessibility">Accessibility</h2>
 <p>I think RotorSim did a pretty good job at lowering the barrier of entry and letting more people experience flight simulation, but outside of making the game easier to play, I need to spend more time adding traditional accessibility options. Godot is getting better and there&rsquo;s really no excuse for the next game to not have a more robust feature set.</p>
@@ -104,7 +104,7 @@ All this and more is why these simplified physics work so well on older hardware
 <li><strong>Better Controller Support with contextual UI</strong><br>
 This isn&rsquo;t limited to just more mature controller support, but also having in game control prompts, context-sensitive options, and making the remapping process as painless as possible.</li>
 <li><strong>Colorblindness Options</strong><br>
-Ironic, because I have a form of deuteranomaly that affects my daily life, and I haven&rsquo;t implemented anything into my games yet. I&rsquo;m excited to implement this in the next title.</li>
+Ironic, because I have a form of deuteranomaly that affects my daily life, and I haven&rsquo;t implemented anything into my games yet. I&rsquo;m excited to change that.</li>
 <li><strong>Other Traditional Options</strong><br>
 Options such as screen reading, visual sound cues, and UI size adjustment.</li>
 </ol>

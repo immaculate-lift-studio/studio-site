@@ -23,13 +23,13 @@ This is a city generator that builds cities using a slot-based grid system. Each
 
 ![PSX Style Camera Shader](../psx-camera.png)
 
-This is a Camera shader for Godot 4 to add distance fog with optional noise, color limiting, and dither. There are a lot of fragmented and partial solutions out there and I wanted to combine various techniques to make an easy to use quad-based shader. 
+This is a camera shader for Godot 4 to add distance fog with optional noise, color limiting, and dither. There are a lot of fragmented and partial solutions out there and I wanted to combine various techniques to make an easy to use quad-based shader. 
 
 **[Godot Ocean Shader](https://github.com/immaculate-lift-studio/Godot-Ocean-Shader)**
 
 ![Godot Ocean Shader](../ocean-shader.png)
 
-This is a water surface shader for Godot 4. I wanted to make a simple water shader that blended two textures and had vertex displacement, and could also pixelate the texture for a more old-school look. 
+A water surface shader for Godot 4. I wanted to make a simple water shader that blended two textures and had vertex displacement, and could also pixelate the texture for a more old-school look. 
 
 **[TerrainCrafter](https://github.com/immaculate-lift-studio/TerrainCrafter)**
 

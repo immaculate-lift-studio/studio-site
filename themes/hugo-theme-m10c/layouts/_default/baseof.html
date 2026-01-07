@@ -25,15 +25,13 @@
       <span class="app-header-title">{{ .Site.Title }}</span>
       {{- with .Site.Menus.main }}
       <nav class="app-header-menu">
-        {{- range $key, $item := . }}
-          {{- if ne $key 0 }}
-            {{ $.Site.Params.menu_item_separator | default " - " | safeHTML }}
-          {{ end }}
-          <a class="app-header-menu-item" href="{{ $item.URL }}">{{ $item.Name }}</a>
-        {{- end }}
-      </nav>
+  {{- range $key, $item := . }}
+    <a class="app-header-menu-item" href="{{ $item.URL }}">{{ $item.Name }}</a><br>
+  {{- end }}
+</nav>
       {{- end }}
       <p>{{ .Site.Params.description | default "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vehicula turpis sit amet elit pretium." }}</p>
+      <p><strong>{{ .Site.Params.author }}</strong></p>
       {{- with .Site.Params.social }}
       <div class="app-header-social">
         {{ range . }}

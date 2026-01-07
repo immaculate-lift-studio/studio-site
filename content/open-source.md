@@ -11,26 +11,26 @@ Below are my released and maintained open source projects. During development of
 ![Focusberry Banner](../focusberry-static.png)
 
 FocusBerry is a minimalist productivity tool designed to help you stay focused without distractions. Using the Pomodoro Technique, it structures work sessions based on your desired schedule, gently reminding you when to take breaks and when to resume work. To keep you motivated, FocusBerry tracks your progress with virtual berries that multiply as you complete focus sessions.
-_________________________________
+___
 
 **[CityCrafter3D](https://github.com/immaculate-lift-studio/CityCrafter3D)**
 
 ![CityCrafter3D](../city-crafter.png)
 
 This is a city generator that builds cities using a slot-based grid system. Each block can be different sizes (1x1, 2x1, 2x2), and blocks are assigned district types (residential, commercial, industrial) using noise or random placement.
-
+___
 **[PSX Style Camera Shader](https://github.com/immaculate-lift-studio/PSX-Style-Camera-Shader)**
 
 ![PSX Style Camera Shader](../psx-camera.png)
 
 This is a camera shader for Godot 4 to add distance fog with optional noise, color limiting, and dither. There are a lot of fragmented and partial solutions out there and I wanted to combine various techniques to make an easy to use quad-based shader. 
-
+___
 **[Godot Ocean Shader](https://github.com/immaculate-lift-studio/Godot-Ocean-Shader)**
 
 ![Godot Ocean Shader](../ocean-shader.png)
 
 A water surface shader for Godot 4. I wanted to make a simple water shader that blended two textures and had vertex displacement, and could also pixelate the texture for a more old-school look. 
-
+___
 **[TerrainCrafter](https://github.com/immaculate-lift-studio/TerrainCrafter)**
 
 ![TerrainCrafter](../terrain-crafter.png)

@@ -1,10 +1,10 @@
 +++
 date = '2025-03-12T10:57:09-07:00'
 draft = false
-title = 'I design simulations and apps with the Godot Engine.'
+title = 'Simulations and apps designed with the Godot Engine.'
 +++
 
-I founded Immaculate Lift Studio in 2023. When I started developing software, my main goal was to remove the complexity and frustration with flight simulators that many experience, and make aviation more accessible to people that don't have expensive sim equipment. I actively contribute to the open-source community by sharing the tools I come up while developing these projects.
+When I founded Immaculate Lift Studio in 2023 and started developing software, my main goal was to remove the complexity and frustration many people experience with flight simulators. My projects are designed to make aviation more accessible without access to expensive sim equipment, and I actively contribute to the open source community by sharing the tools I come up with while developing these projects.
 
 ---
 

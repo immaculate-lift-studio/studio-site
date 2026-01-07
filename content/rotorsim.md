@@ -15,11 +15,12 @@ ___
 RotorSim World has been my goal for years. A story-driven open world flight simulator that combines the fun of old-school "Simcade" flight games with the simulator foundation that I spent years developing for RotorSim. It's far from complete, but porting over the work I did with RotorSim means I can spend my time making a much bigger game. The planned roadmap is big, but manageable:
 
 * Many more interesting helicopters (all shapes and sizes)
-* Get out of your helicopter and drive cars, trucks, complete missions, and explore
+* Randomized missions in addition to the campaign to provide endless replayability
 * 64km² world with cities, a coastline, forests, and secrets
 * Expanded mission types, such as firefighting, more involved and complicated cargo operations, and smuggling
-* NPCs! Thousands of citizens going about their daily lives and interacting with you
-* The story of AeroAssist continues, with new characters and some old favorites coming back.
+* NPCs! Many hundreds more than the previous game
+* Traffic! Cars and trucks will drive around, get into jams, and react to the player
+* The story of AeroAssist continues, with new characters and some old favorites coming back
 
 I've been developing new tools to help manage the development, such as generation systems for cities, forests, and weather. Now that those are active and functional, development can start moving much more quickly.
 

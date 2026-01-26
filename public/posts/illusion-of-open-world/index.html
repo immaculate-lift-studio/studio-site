@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en-us">
+  <head><script src="/studio-site/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=studio-site/livereload" data-no-instant defer></script>
+    <title>Smoke and Mirrors: Making an Open World Busy // Immaculate Lift Studio</title>
+    <link rel="shortcut icon" href="favicon.png" />
+    <meta charset="utf-8" />
+    <meta name="generator" content="Hugo 0.152.2">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Benjamin Hebert" />
+    <meta name="description" content="" />
+    <link rel="stylesheet" href="/studio-site/css/main.min.ce534a427309531d527a2763773969c6c09988308f78f87131250b9ab3597c31.css" />
+    
+
+    
+    
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Smoke and Mirrors: Making an Open World Busy">
+  <meta name="twitter:description" content="One of my favorite aspects of game development is that 99% of the time, what people see isn’t what they think: it’s all smoke and mirrors. Whether it’s a person that doesn’t “switch on” until you are right next to them or a tree that isn’t really a tree until you crash into it, it boils down to deciding what your players can afford to notice in order for the game to appear smooth and enjoyable for the players. The Godot engine doesn’t include any easy solutions for managing large worlds, so I wanted to talk about the techniques that made this world possible for me. This is all very high level and I don’t go into a lot of detail, but if anyone wants to know more specific techniques or see the code, please contact me.">
+
+    <meta property="og:url" content="http://localhost:1313/studio-site/posts/illusion-of-open-world/">
+  <meta property="og:site_name" content="Immaculate Lift Studio">
+  <meta property="og:title" content="Smoke and Mirrors: Making an Open World Busy">
+  <meta property="og:description" content="One of my favorite aspects of game development is that 99% of the time, what people see isn’t what they think: it’s all smoke and mirrors. Whether it’s a person that doesn’t “switch on” until you are right next to them or a tree that isn’t really a tree until you crash into it, it boils down to deciding what your players can afford to notice in order for the game to appear smooth and enjoyable for the players. The Godot engine doesn’t include any easy solutions for managing large worlds, so I wanted to talk about the techniques that made this world possible for me. This is all very high level and I don’t go into a lot of detail, but if anyone wants to know more specific techniques or see the code, please contact me.">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2026-01-25T20:28:59-08:00">
+    <meta property="article:modified_time" content="2026-01-25T20:28:59-08:00">
+
+
+  </head>
+  <body>
+    <header class="app-header">
+      <a href="/studio-site/"><img class="app-header-avatar" src="/studio-site/icon.png" alt="Benjamin Hebert" /></a>
+      <span class="app-header-title">Immaculate Lift Studio</span>
+      <nav class="app-header-menu">
+    <a class="app-header-menu-item" href="/studio-site/rotorsim/">RotorSim Series</a><br>
+    <a class="app-header-menu-item" href="/studio-site/open-source/">Open Source Projects</a><br>
+    <a class="app-header-menu-item" href="/studio-site/posts/">Articles</a><br>
+</nav>
+      <p>Building helicopter simulators and contributing to open source Godot projects.</p>
+      <p><strong><a href="https://www.linkedin.com/in/benjaminlhebert/">Benjamin Hebert</a></strong></p>
+      <div class="app-header-social">
+        
+          <a href="https://github.com/immaculate-lift-studio" target="_blank" rel="noreferrer noopener me">
+            <svg class="icon icon-brand-github" viewBox="0 0 24 24" fill="currentColor"><title>GitHub</title><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+          </a>
+        
+          <a href="https://www.youtube.com/@Fairbear8974" target="_blank" rel="noreferrer noopener me">
+            <svg class="icon icon-brand-youtube" viewBox="0 0 24 24" fill="currentColor"><title>YouTube</title><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+          </a>
+        
+          <a href="https://immaculate-lift-studio.itch.io/" target="_blank" rel="noreferrer noopener me">
+            <svg class="icon icon-brand-itchdotio" viewBox="0 0 24 24" fill="currentColor"><title>Itch.io</title><path d="M3.13 1.338C2.08 1.96.02 4.328 0 4.95v1.03c0 1.303 1.22 2.45 2.325 2.45 1.33 0 2.436-1.102 2.436-2.41 0 1.308 1.07 2.41 2.4 2.41 1.328 0 2.362-1.102 2.362-2.41 0 1.308 1.137 2.41 2.466 2.41h.024c1.33 0 2.466-1.102 2.466-2.41 0 1.308 1.034 2.41 2.363 2.41 1.33 0 2.4-1.102 2.4-2.41 0 1.308 1.106 2.41 2.435 2.41C22.78 8.43 24 7.282 24 5.98V4.95c-.02-.62-2.082-2.99-3.13-3.612-3.253-.114-5.508-.134-8.87-.133-3.362 0-7.945.053-8.87.133zm6.376 6.477a2.74 2.74 0 0 1-.468.602c-.5.49-1.19.795-1.947.795a2.786 2.786 0 0 1-1.95-.795c-.182-.178-.32-.37-.446-.59-.127.222-.303.412-.486.59a2.788 2.788 0 0 1-1.95.795c-.092 0-.187-.025-.264-.052-.107 1.113-.152 2.176-.168 2.95v.005l-.006 1.167c.02 2.334-.23 7.564 1.03 8.85 1.952.454 5.545.662 9.15.663 3.605 0 7.198-.21 9.15-.664 1.26-1.284 1.01-6.514 1.03-8.848l-.006-1.167v-.004c-.016-.775-.06-1.838-.168-2.95-.077.026-.172.052-.263.052a2.788 2.788 0 0 1-1.95-.795c-.184-.178-.36-.368-.486-.59-.127.22-.265.412-.447.59a2.786 2.786 0 0 1-1.95.794c-.76 0-1.446-.303-1.948-.793a2.74 2.74 0 0 1-.468-.602 2.738 2.738 0 0 1-.463.602 2.787 2.787 0 0 1-1.95.794h-.16a2.787 2.787 0 0 1-1.95-.793 2.738 2.738 0 0 1-.464-.602zm-2.004 2.59v.002c.795.002 1.5 0 2.373.953.687-.072 1.406-.108 2.125-.107.72 0 1.438.035 2.125.107.873-.953 1.578-.95 2.372-.953.376 0 1.876 0 2.92 2.934l1.123 4.028c.832 2.995-.266 3.068-1.636 3.07-2.03-.075-3.156-1.55-3.156-3.025-1.124.184-2.436.276-3.748.277-1.312 0-2.624-.093-3.748-.277 0 1.475-1.125 2.95-3.156 3.026-1.37-.004-2.468-.077-1.636-3.072l1.122-4.027c1.045-2.934 2.545-2.934 2.92-2.934zM12 12.714c-.002.002-2.14 1.964-2.523 2.662l1.4-.056v1.22c0 .056.56.033 1.123.007.562.026 1.124.05 1.124-.008v-1.22l1.4.055C14.138 14.677 12 12.713 12 12.713z"/></svg>
+          </a>
+        
+          <a href="mailto:immaculate-lift-studio@outlook.com" target="_blank" rel="noreferrer noopener me">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-link">
+  <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path>
+  <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
+</svg>
+          </a>
+        
+          <a href="https://ko-fi.com/immaculateliftstudio" target="_blank" rel="noreferrer noopener me">
+            <svg class="icon icon-brand-kofi" viewBox="0 0 24 24" fill="currentColor"><title>Ko-fi</title><path d="M23.881 8.948c-.773-4.085-4.859-4.593-4.859-4.593H.723c-.604 0-.679.798-.679.798s-.082 7.324-.022 11.822c.164 2.424 2.586 2.672 2.586 2.672s8.267-.023 11.966-.049c2.438-.426 2.683-2.566 2.658-3.734 4.352.24 7.422-2.831 6.649-6.916zm-11.062 3.511c-1.246 1.453-4.011 3.976-4.011 3.976s-.121.119-.31.023c-.076-.057-.108-.09-.108-.09-.443-.441-3.368-3.049-4.034-3.954-.709-.965-1.041-2.7-.091-3.71.951-1.01 3.005-1.086 4.363.407 0 0 1.565-1.782 3.468-.963 1.904.82 1.832 3.011.723 4.311zm6.173.478c-.928.116-1.682.028-1.682.028V7.284h1.77s1.971.551 1.971 2.638c0 1.913-.985 2.667-2.059 3.015z"/></svg>
+          </a>
+        
+      </div>
+    </header>
+    <main class="app-container">
+      
+  <article class="post">
+    <header class="post-header">
+      <h1 class ="post-title">Smoke and Mirrors: Making an Open World Busy</h1>
+      <div class="post-meta">
+        <div>
+          <svg class="icon icon-calendar" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><title>calendar</title><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+          Jan 25, 2026
+        </div>
+        <div>
+          <svg class="icon icon-clock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><title>clock</title><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+          7 min read
+        </div>
+      </div>
+    </header>
+    <div class="post-content">
+      <p>One of my favorite aspects of game development is that 99% of the time, what people see isn&rsquo;t what they think: it&rsquo;s all smoke and mirrors. Whether it&rsquo;s a person that doesn&rsquo;t &ldquo;switch on&rdquo; until you are right next to them or a tree that isn&rsquo;t really a tree until you crash into it, it boils down to deciding what your players can afford to notice in order for the game to appear smooth and enjoyable for the players. The Godot engine doesn&rsquo;t include any easy solutions for managing large worlds, so I wanted to talk about the techniques that made this world possible for me. This is all very high level and I don&rsquo;t go into a lot of detail, but if anyone wants to know more specific techniques or see the code, please contact me.</p>
+<p>When dealing with game logic in a large world, there are 2 main elements I focused on: The static, unmoving world and the dynamic, constantly changing world. Both can be incredibly demanding (even when assets are optimized) and because of the conceptual differences between the two, they need very different approaches to fix. For the static world, I made a grid system and optimized draw calls, and for the dynamic world, I made a dynamic bubble of activation. I will explain both below.</p>
+<h2 id="managing-the-static-world">Managing the Static World</h2>
+<p>In a world that is 10 or more kilometers wide, you cannot have everything loaded at once. Maybe on more expensive hardware you could hold it in memory, but the calculations that are required would quickly add up and rendering even a static scene would be very difficult to do smoothly.</p>
+<p>The first issue is draw calls - for those unfamiliar with this term, a draw call what a computer&rsquo;s GPU does when it draw something on screen. Each unique object or material generally requires its own draw call. So what do you think happens when you put 4500 buildings, hundreds of streets pieces, and 50,000 trees in a world? It&rsquo;s awful and will probably set your computer on fire, even if the player isn&rsquo;t moving. The key to fix this is <strong>instanced rendering</strong>. Identical objects can be drawn many times with a single draw call, even if the objects are sized or placed differently, and this also applies to a texture on said mesh. This means that when the camera focuses on a city block containing several different types of buildings and street pieces totaling ~400 draw calls with textures, we are now only producing ~12 draw calls. That&rsquo;s a massive improvement, and it gets even better when you focus on the trees: I have thousands of trees rendered, but they are all based on 1 base tree mesh, scaled and rotated randomly, and then placed (in chunked areas) according to a perlin noise algorithm. Instead of thousands and thousands of draw calls, you might only have to process 1-10 on your screen!</p>
+<p><img src="../draw_calls.png" alt="Draw Calls Example"><br>
+<em>A visual of the chunking system, where each square (roughly) represents 1 draw call for that group of trees</em></p>
+<p>The second issue I encountered was collisions, which even for static objects can seriously hamper performance. Any object that can collide with another object (in this game, trees and buildings must have collision) has to report it&rsquo;s position and scan for other objects interacting with it every time the physics server ticks (the average for a game engine is usually 60 times a second). We lighten the load on the hardware by dividing up the world into &ldquo;grid squares&rdquo; that are 1km by 1km wide. Within each square, tasks such as activated and tracking collision are disabled until the player crosses into that specific grid - which can reduce the computational load of the physics engine tracking colliders by over 95%. When the player exits that activated grid squared, everything shuts off and sleeps until it&rsquo;s reactivated. Since all of it is static, there&rsquo;s no need for anything more complicated than an on/off switch.</p>
+<h2 id="the-bubble-system-managing-the-dynamic-world">The Bubble System: Managing the Dynamic World</h2>
+<p>Things get more complicated when you take a look at the dynamic elements in this game, though. The game features little people that walk around, interact with you if you get near, run away from the helicopter, etc. I also added vehicles that follow traffic laws, avoid each other/the people, and react excessively when a helicopter gets close. But if you add up how many pedestrians and cars were being rendered and calculated (ie how many physics bodies were being moved around and interacting with the world), we had over 3000 citizens and around 1500 cars all operating whether the player was close enough to notice or not. Obviously that&rsquo;s not efficient, but I couldn&rsquo;t use the grid system for this as these are dynamic parts of the world. If I ran the simulations in a small controlled environment, I couldn&rsquo;t get past a couple hundred of either without serious performance issues. So I created a &ldquo;bubble&rdquo; system that follows the player and controls when NPCs spawn, how they behave, and how much detail they are given. This system is shaped like a sphere (with the limits roughly correlating to how far the player can see out into the world), and inside the bubble, NPCs can exist are simulated in various detail levels based on proximity to the player. Outside the bubble, they do not exist. As the player moves around the world, NPCs will spawn at randomized (yet controlled) locations within the bubble, and as they move outside the bubble will be removed and saved to be reused in another random placement later.</p>
+<p><img src="../bubble_system.png" alt="Bubble System"><br>
+<em>Clumsy approximation of the bubble system in action</em></p>
+<p>The advantages of this system are not only much better performance due to the tiny computational cost as compared to simulating and controlling the entire world at once, but also gives me the opportunity to fill that bubble much more densely than if I had populated the whole world. As the player flies and moves around the world, they experience a fully populated environment that is consistently bustling and interesting.</p>
+<p>There is another layer of this to improve efficiency as well: Specific distance-based level of detail (LOD) for each NPC. For citizens, this could mean that one 10 meters away is fully simulated, with animations, reactions, and details, but a citizen 200 meters away is a simple 2d picture that slides across the ground. For vehicles, they don&rsquo;t actually notice or react to other cars and obstacles when the player is hundreds of meters away, they just follow a simple path on the road and when activated, they will start behaving more realistically. So if the player is flying around the world at the high detail level, they will notice and appreciate maybe 200 active cars/citizens, but only 20-30 of them will be fully simulated.</p>
+<h2 id="combining-the-two-systems">Combining the two systems</h2>
+<p>Combining these two systems leads to a perceptually seamless and populated world that maintains performance, only compromising in ways that the player will not notice 99.9% of the time, if ever. My journey to figure all this out required me to shift my understanding of simulation from &ldquo;how can I do this realistically&rdquo; to &ldquo;what does the player need to <strong>percieve</strong> in order to be fooled?&rdquo; In many ways, coming to the conclusion that good enough is far better than perfect as I develop has helped me immeasurably, as I&rsquo;ve lost time to over-analyzing, over-profiling, and over-focusing on tiny things that the player will never see.</p>
+<p>I think that developers going on the same journey as me should not look for a single, one-size-fits-all tool, because different kinds of content have different optimization requirements. My technique of Static = Spatial Organization vs Dynamic = Distance-based has paid off in spades. The result in RotorSim 2 is:</p>
+<ul>
+<li>Almost 5000 buildings</li>
+<li>Dozens of kilometers of roads</li>
+<li>Over 50k trees</li>
+<li>Hundreds of citizens/vehicles behaving realistically wherever the player goes</li>
+</ul>
+<p>This all happens with with comparable performance to my first game (which was a fraction of the size and didn&rsquo;t simulate traffic). That means 60-90 frames/second with low end and integrated hardware.</p>
+<p><em>A disclaimer = PROFILE, PROFILE, PROFILE! I would not have figured any of this out if I hadn&rsquo;t used the built in performance profiler and looked deep within it. Once you figure out what the true cost of a frame is, then you can take steps to optimize it. Without understanding your frames, you won&rsquo;t get anywhere with this kind of optimization.</em></p>
+
+    </div>
+    <div class="post-footer">
+      
+    </div>
+  </article>
+
+    </main>
+  </body>
+</html>

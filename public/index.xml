@@ -6,8 +6,15 @@
     <description>Recent content in Simulations and apps designed with the Godot Engine. on Immaculate Lift Studio</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 14 Dec 2025 20:28:59 -0800</lastBuildDate>
+    <lastBuildDate>Sun, 25 Jan 2026 20:28:59 -0800</lastBuildDate>
     <atom:link href="http://localhost:1313/studio-site/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Smoke and Mirrors: Making an Open World Busy</title>
+      <link>http://localhost:1313/studio-site/posts/illusion-of-open-world/</link>
+      <pubDate>Sun, 25 Jan 2026 20:28:59 -0800</pubDate>
+      <guid>http://localhost:1313/studio-site/posts/illusion-of-open-world/</guid>
+      <description>&lt;p&gt;One of my favorite aspects of game development is that 99% of the time, what people see isn&amp;rsquo;t what they think: it&amp;rsquo;s all smoke and mirrors. Whether it&amp;rsquo;s a person that doesn&amp;rsquo;t &amp;ldquo;switch on&amp;rdquo; until you are right next to them or a tree that isn&amp;rsquo;t really a tree until you crash into it, it boils down to deciding what your players can afford to notice in order for the game to appear smooth and enjoyable for the players. The Godot engine doesn&amp;rsquo;t include any easy solutions for managing large worlds, so I wanted to talk about the techniques that made this world possible for me. This is all very high level and I don&amp;rsquo;t go into a lot of detail, but if anyone wants to know more specific techniques or see the code, please contact me.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Faking Realism: The Sim-Lite Experience</title>
       <link>http://localhost:1313/studio-site/posts/faking-realism/</link>

@@ -1,14 +1,15 @@
+
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/studio-site/posts/faking-realism/</loc>
-    <lastmod>2025-12-14T20:28:59-08:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/studio-site/posts/</loc>
-    <lastmod>2025-12-14T20:28:59-08:00</lastmod>
+    <lastmod>2026-01-25T20:28:59-08:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/studio-site/posts/illusion-of-open-world/</loc>
+    <lastmod>2026-01-25T20:28:59-08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/studio-site/posts/faking-realism/</loc>
     <lastmod>2025-12-14T20:28:59-08:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/studio-site/open-source/</loc>

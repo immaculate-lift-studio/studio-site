@@ -30,7 +30,7 @@ RotorSim World is a direct sequel to the original RotorSim, featuring procedural
 I built new tools to help manage the development, such as generation systems for cities, forests, and weather, and development is moving quickly because of that. I am anticipating a late 2026 or early 2027 release for the 1.0 version, and I would like to make this a long-term project that receives significant updates over the next few years (such as new maps, helicopters, mission types, and flight models).
 
 ---
-Please consider following my development on YouTube or joining the studio discord! All ideas are welcome, and I welcome suggestions and feedback.
+Please consider following my development on YouTube or joining the studio discord! All ideas are welcome, and I pay attention to all suggestions and feedback.
 
 [![Discord Server](../discord_button.png)](https://discord.gg/rJJgg7yYuc) 
 
